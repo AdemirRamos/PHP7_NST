@@ -113,7 +113,6 @@
         //array_pop($veículos);
 
         //Ao se imprimir o "array_pop()", será mostrado o elemento excluído:
-
         
         print " | Elemento excluído: ";
 
