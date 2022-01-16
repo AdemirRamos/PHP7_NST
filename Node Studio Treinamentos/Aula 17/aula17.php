@@ -138,7 +138,7 @@
 
         //8ª: "array_unshift()": adiciona um ou mais elementos no ínicio do "array":
 
-        $frutas = array('Uva', 'Laranja', 'Maça');
+        $frutas = array('Uva', 'Laranja', 'Maçã');
         
         echo 'Resultado (antes da inserção de novos elementos): ';
 
