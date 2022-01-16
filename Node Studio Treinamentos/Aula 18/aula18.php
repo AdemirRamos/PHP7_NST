@@ -191,6 +191,42 @@
 
         echo '<hr>';
 
+        //12ª: "explode()": transforma "string" em "array":
+
+        $data = '16/01/2022';
+        
+        //O primeiro parâmetro de "explode" é o divisor (nesse caso, "/"); o segundo parâmetro é a "string" que será convertida em vetor.
+
+        $nova_data = explode('/', $data);
+        
+        print 'Resultado: ';
+
+        print_r($nova_data);
+
+        print '<hr>';
+
+        $frase = 'Meu nome não é Jhonny.';
+
+        $vetor = explode(' ', $frase);
+
+        print_r($vetor);
+
+        print '<hr>';
+
+        //13ª: "implode()": transforma um "array" em "string":
+
+        $names = array('Ademir', 'Rodrigo', 'Bia', 'Felipe', 'Jhonny');
+
+        //O primeiro parâmetro de "implode()" determina o elemento que fará a divisão dos valores; o segundo é o vetor convertido.
+
+        $string = implode(', ', $names);
+
+        print 'Resultado: ';
+
+        print_r($string);
+
+        print '<hr>';
+
     ?>
 
 </body>
