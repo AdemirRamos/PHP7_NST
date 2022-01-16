@@ -48,8 +48,15 @@
 
         var_dump(times);
 
-        //Outro detalhe que diferencia as Constante's das Variáveis: as Contante's são globais.
+        echo '<hr>';
 
+        //Outro detalhe que diferencia as Constante's das Variáveis: as Contante's são globais:
+
+        function exibir_nome() {
+            echo nome;
+        }
+
+        exibir_nome();
     ?>
 
 </body>
