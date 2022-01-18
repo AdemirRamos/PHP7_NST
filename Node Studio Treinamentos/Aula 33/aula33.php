@@ -7,7 +7,11 @@
     $nome = $_POST['nome'];
     $email = $_POST['email'];
 
-    print "O seu nome é '$nome' e o seu e-mail é '$email'.";
+    echo "O seu nome é '$nome' e o seu e-mail é '$email'.";
+
+    echo '<hr>';
+
+    echo 'Resultado: ';
 
     var_dump($_POST);
 
