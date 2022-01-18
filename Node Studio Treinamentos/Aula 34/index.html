@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 34 - Formulários ($_GET)</title>
+
+    <style>
+
+        input {
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="aula33.php" method="get">
+
+        <!--É importante adicionar nomes ao "input's".-->
+        <!--Através do método "get", as informações deste formulário são enviadas para o arquivo marcado em "action".-->
+        <!--Esse processo de envio de dados se dará através de parâmetros de URL.-->
+        <!--Dessa maneira, eles ficarão visíveis, para qualquer um, na URL.-->
+        <!--Na URL da página (para a qual os dados foram enviados), os parâmetro serão precedidos por interrogações.-->
+
+        Nome: <input type="text" name="nome" style="margin-bottom: 10px;">
+        E-mail <input type="text" name="email" style="margin-bottom: 10px;">
+        <input type="submit" name="Enviar">
+
+    </form>
+
+    <!--Através do método "get", não é preciso fazer o envio de dados exclusivamente através de formulários:-->
+
+    <!--Primeiro, adicionamos o nome do arquivo que receberá os dados a serem enviados.-->
+    <!--Para definir os parâmetros, basta adicionar uma interrogação.-->
+    <!--Os parâmetros funcionarão da seguinte forma: primeiro o nome do parâmetro, um sinal de igual e, em seguida, o seu valor.-->
+    <!--Para adicionar mais parâmetros, basta digitar um &.-->
+
+    <a href="aula34.php?nome=Ademir&idade=25&emai=ademirramos634@gmail.com">Enviar dados.</a>
+
+    <!--Uma vez que os dados sejam enviados para o documento-destino, através da URL desse documento, se pode adicionar + parâmetros.-->
+    <!--Ao se clicar em enter, ainda na URL, os novos dados passados serão enviados para o "array" onde já estão os demais dados.-->
+    <!--Não se pode simplesmente confiar cegamente nos dados enviados pelo usuário, por isso, é importante realizar uma filtragem.-->
+    <!--Filtragem de dados será o tema da próxima aula.-->
+
+</body>
+
+</html>
