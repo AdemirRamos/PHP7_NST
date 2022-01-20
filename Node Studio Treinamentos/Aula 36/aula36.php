@@ -31,9 +31,28 @@
 
             $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
 
-            //"FILTER_SANITIZE_SPECIAL_CHARS": permitir escapar todos os códigos HTML.
+            //"FILTER_SANITIZE_SPECIAL_CHARS": Impede que comandos HTML, passados via formulário, sejam executados como HTML.
 
-            print "Resultado: $Nome. <hr>";
+            print "Resultado: $nome. <hr>";
+
+            $idade = filter_input(INPUT_POST, 'idade', FILTER_SANITIZE_NUMBER_INT);
+
+            //"FILTER_SANITIZE_NUMBER_INT": Não permite que um valor diferente de um número inteiro seja escrito como resultado.
+            //Caso, na mensagem, entre outras coisas, exista um número, somente esse número será mostrado como resultado.
+
+            print "Resultado: $idade. <hr>";
+
+            $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+
+            //"FILTER_SANITIZE_EMAIL": Caso exista algum caractere que não componha o e-mail, esse será removido - restando só o e-mail.
+
+            print "Resultado: $email. <hr>";
+
+            $url = filter_input(INPUT_POST, 'url', FILTER_SANITIZE_URL);
+
+            //"FILTER_SANITIZE_URL": Impede a impressão de caracteres que não componham a URL.
+
+            print "Resultado: $url. <hr>";
 
         endif;
 
