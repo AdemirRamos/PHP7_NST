@@ -48,7 +48,7 @@
 
         if (preg_match($padrão, $string)):
 
-            echo 'Válido. <hr>';
+            echo '"String" válida. <hr>';
 
             echo "Resultado: \"$string\". <hr>";
             
@@ -77,7 +77,7 @@
 
         if (preg_match($padrão, $string)):
 
-            echo 'Válido. <hr>';
+            echo 'E-mail válido. <hr>';
 
             echo "Resultado: \"$string\". <hr>";
             
@@ -97,7 +97,7 @@
 
         if (preg_match($padrão, $string)):
 
-            echo 'Válido. <hr>';
+            echo 'Data válida. <hr>';
 
             echo "Resultado: \"$string\". <hr>";
             
