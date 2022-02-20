@@ -22,7 +22,7 @@
 
         //Escrevendo os dados na tela (com interpolação):
 
-        echo 'Nome: $nome; Idade: $idade; Sexo: $sexo.';
+        echo "Nome: $nome; Idade: $idade; Sexo: $sexo.";
 
         //As regras para criação de variáveis, em PHP, são iguais a outras linguagens de programação - além de serem "case sensitive".
 
