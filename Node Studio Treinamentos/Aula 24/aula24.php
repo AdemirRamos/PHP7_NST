@@ -53,7 +53,7 @@
 
         print '<hr>';
 
-        //4ª: === -> operador de não identidade: verifica se dois valores não são idênticos em grandeza e tipo.
+        //4ª: !== -> operador de não identidade: verifica se dois valores não são idênticos em grandeza e tipo.
 
         if (10 !== 10):
             print '10 não é idêntico a 10? Verdadeiro.';
