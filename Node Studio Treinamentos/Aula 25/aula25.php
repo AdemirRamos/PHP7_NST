@@ -17,7 +17,7 @@
         $idade = 25;
         $nome = 'Ademir';
 
-        //Os testes lógicos podem ou não ir entre parênteses:
+        //Os testes lógicos podem ir, ou não, entre parênteses:
 
         if ($nome == 'Ademir' and $idade == 25):
             echo "Nome: $nome; Idade: $idade.";
@@ -53,7 +53,7 @@
 
         echo '<hr>';
 
-        //4ª: ! -> negação: inverte o estado lógico da expressão: "!($nome == 'Ademir')" -> nome não é igual a "Ademir".1
+        //4ª: ! -> negação: inverte o estado lógico da expressão: "!($nome == 'Ademir')" -> nome não é igual a "Ademir".
 
         if (!($nome == 'Ademir') and !($idade == 25)):
             echo "Nome: $nome; Idade: $idade.";
