@@ -14,7 +14,7 @@
     
         $senha = '123456';
 
-        //"password_hasg()" recebe dois parâmetros: o 1ª é a senha em si; o 2ª é o algoritmo que irá gerar essa senha.
+        //"password_hash()" recebe dois parâmetros: o 1ª é a senha em si; o 2ª é o algoritmo que irá gerar essa senha.
         //P. S.: o valor padrão para o segundo parâmetro costuma ser "password_default".
 
         $options = [
