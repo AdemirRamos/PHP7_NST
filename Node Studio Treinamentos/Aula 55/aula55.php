@@ -30,7 +30,7 @@
 
         //Opções de valores: [a-z]: letras minúsculas; [A-Z]: letras maiúsculas; [A-Za-z]: ambas; [A-Za-z0-9]: ambas letras e números.
 
-        //P. S.: Caso a "padrão" tenha mais de uma letra, o retorno será false.
+        //P. S.: Caso o "padrão" tenha mais de uma letra, o retorno será false.
 
         //"i" minúsculo, após a segunda barra, anula o "case sensitive" que, por definição, é padrão.
 
@@ -69,7 +69,7 @@
         $padrão = "/^[a-z0-9.\-\_]+@[a-z0-9.\-\_]+\.(com|br|com.br|net)+$/i";
         
         //Dentro dos colchetes, estão todos os caracteres aceitos.
-        //Após o sinal de mais, temos declaramos uma @ para que essa seja aceita e validada.
+        //Após o sinal de mais, declaramos uma @ para que essa seja aceita e validada.
         //Após o arroba, temos a validação do "gmail".
         //Após o segundo sinal de mais, adicionamos um ponto para validar o ponto entre "gmail" e "com".
         //P. S.: Antes de ponto, devemos adicionar uma barra invertida.
