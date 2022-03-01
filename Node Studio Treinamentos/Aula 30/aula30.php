@@ -61,7 +61,7 @@
 
         print '<hr>';
 
-        //5ª: "rand": serve para sortear números aleatoriamente
+        //5ª: "rand": serve para sortear números aleatoriamente.
 
         print 'Valor aleatório: ';
 
