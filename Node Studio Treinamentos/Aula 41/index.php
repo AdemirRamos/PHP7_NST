@@ -14,12 +14,12 @@
 
 		//Verificando os dados passados (usando uma função "mysqli" para filtrar os dados):
 
-		$login = mysqli_escape_string($connect, $_POST['nome']);
+		$login = mysqli_escape_string($connect, $_POST['login']);
 		$senha = mysqli_escape_string($connect, $_POST['senha']);
 
 		//Caso se esteja usando o phpMyAdmin com uma senha criptografada com MD5, digite o seguinte para o funcionamento correto:
 
-		//$senha = md5($senha);
+		$senha = md5($senha);
 
 		//Parâmetros: 1ª: conexão com o banco de dados; 2ª: a variável que contem o dado. - arquivos vindos de "db_connection.php".
 
@@ -49,7 +49,7 @@
 
 				//Verificando se a senha digitada bate com a senha do banco de dados:
 
-				$sql = "SELECT * FROM usuários WHERE login = '$login' AND login = '$senha'";
+				$sql = "SELECT * FROM usuários WHERE login = '$login' AND senha = '$senha'";
 
 				$resultado = mysqli_query($connect, $sql);
 
@@ -57,7 +57,9 @@
 
 					//Passando as variáveis "$resultado" das duas consultas para a variável "$dados" convertidas em vetor.
 
-					//Criando uma sessão:
+					$dados = mysqli_fetch_array($resultado);
+
+					//Criando duas sessões:
 
 					$_SESSION['logado'] = true;
 					$_SESSION['id_usuário'] = $dados['id'];
@@ -65,8 +67,6 @@
 					//Redirecionando o usuário:
 
 					header('Location: home.php');
-
-					$dados = mysqli_fetch_array($resultado);
 
 				else:
 
@@ -143,7 +143,7 @@
 		<div class="bloco marginBottom">
 
 			<label for="nome_id" class="marginRight1">Nome:</label>
-			<input type="text" name="nome" id="nome_id">
+			<input type="text" name="login" id="login_id">
 
 		</div>
 
