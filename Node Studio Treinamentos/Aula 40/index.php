@@ -2,7 +2,7 @@
 
 	if (isset($_POST['botão-entrar'])): //Caso exista o índice "botão-entrar" || Caso o "botão-entrar" seja clicado.
 
-		echo "Clicou!";
+		echo "<li style='color: green;'>Clicou!</li>";
 
 	endif;
 
@@ -45,7 +45,7 @@
 		<div class="bloco marginBottom">
 
 			<label for="nome_id" class="marginRight1">Nome:</label>
-			<input type="text" name="nome" id="nome_id">
+			<input type="text" name="login" id="login_id">
 
 		</div>
 
