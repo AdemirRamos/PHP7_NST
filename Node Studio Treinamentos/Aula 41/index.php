@@ -58,6 +58,7 @@
 					//Passando as variáveis "$resultado" das duas consultas para a variável "$dados" convertidas em vetor.
 
 					$dados = mysqli_fetch_array($resultado);
+					mysqli_close($connect);
 
 					//Criando duas sessões:
 
